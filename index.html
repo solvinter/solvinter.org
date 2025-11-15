@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvinter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-accent: #fff5e6;
+      --text: #1f2430;
+      --muted: #5c6475;
+      --accent: #f0b76e;
+      --accent-soft: #ffe7bf;
+      --border: #e0e4f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at 10% -10%, #ffe7bf 0%, #f8fafc 35%, #e4f0ff 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 40px rgba(15, 30, 70, 0.08);
+      padding: 2.4rem 2rem 2.2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2.1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-block;
+      margin: 1.4rem 0 1.1rem;
+      padding: 0.25rem 0.9rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #6b4213;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .text {
+      font-size: 0.98rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 1.8rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      border: none;
+      text-decoration: none;
+      background: var(--accent);
+      color: #3a2200;
+      font-weight: 500;
+      font-size: 0.98rem;
+      box-shadow: 0 10px 24px rgba(180, 120, 40, 0.3);
+      cursor: pointer;
+      margin-bottom: 1.8rem;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+    }
+
+    .contact-box {
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .contact-box strong {
+      color: var(--text);
+    }
+
+    .contact-box a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(31,36,48,0.2);
+    }
+
+    .contact-box a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 2rem 1.4rem 2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>SOLVINTER</h1>
+    <p class="tagline">Ett frö till ett växthus för mänsklig hållbarhet.</p>
+
+    <div class="pill">Huvudprojekt: Aethersum</div>
+
+    <p class="text">
+      Just nu växer Solvinter som idé och praktik genom Aethersum – en första prototyp för
+      ett växthuskollektiv där boende, återhämtning, studier och skapande möts.
+    </p>
+
+    <!-- Byt ut href mot din riktiga Kickstarter-länk när den finns -->
+    <a class="btn-primary" href="KICKSTARTER-LÄNK-HÄR" target="_blank" rel="noopener noreferrer">
+      Till Aethersum på Kickstarter
+    </a>
+
+    <div class="contact-box">
+      <p>
+        Solvinter kommer på sikt att formas som en egen stiftelse. Just nu söker jag personer
+        som är nyfikna på att bidra – som bollplank, samarbetspartner eller framtida styrelseledamot.
+      </p>
+      <p>
+        <strong>Kontakt:</strong><br>
+        <a href="mailto:kontakt@solvinter.org">kontakt@solvinter.org</a> (byt adress när du vill)
+      </p>
+    </div>
+  </div>
+</body>
+</html>
