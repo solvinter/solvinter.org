@@ -8,87 +8,89 @@
 
   <style>
     :root {
-      --bg: #f8fafc;
-      --bg-accent: #fff5e6;
+      --bg-light: #f7f9fd;
+      --bg-warm: #fff3d9;
+      --bg-blue: #e7f1ff;
+
       --text: #1f2430;
-      --muted: #5c6475;
-      --accent: #f0b76e;
-      --accent-soft: #ffe7bf;
-      --border: #e0e4f0;
+      --text-muted: #5c6475;
+
+      --accent: #e9a85d;
+      --accent-dark: #7a4a18;
+      --border: #e3e6ef;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at 10% -10%, #ffe7bf 0%, #f8fafc 35%, #e4f0ff 100%);
-      color: var(--text);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at 10% -10%, var(--bg-warm) 0%, var(--bg-light) 45%, var(--bg-blue) 100%);
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.2rem;
+      color: var(--text);
     }
 
     .card {
-      max-width: 520px;
       width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 24px;
+      max-width: 520px;
+      background: #ffffffcc;
+      backdrop-filter: blur(6px);
+      border-radius: 22px;
       border: 1px solid var(--border);
-      box-shadow: 0 18px 40px rgba(15, 30, 70, 0.08);
-      padding: 2.4rem 2rem 2.2rem;
+      box-shadow: 0 18px 40px rgba(20,40,80,0.06);
+      padding: 2.6rem 2.2rem 2.2rem;
       text-align: center;
     }
 
     h1 {
-      margin: 0 0 0.4rem;
-      font-size: 2.1rem;
-      letter-spacing: 0.12em;
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+      letter-spacing: 0.15em;
+      font-weight: 500;
       text-transform: uppercase;
     }
 
     .tagline {
-      margin: 0;
-      font-size: 0.98rem;
-      color: var(--muted);
+      font-size: 1rem;
+      margin-top: 0;
+      color: var(--text-muted);
+      line-height: 1.6;
     }
 
     .pill {
-      display: inline-block;
-      margin: 1.4rem 0 1.1rem;
-      padding: 0.25rem 0.9rem;
+      margin: 1.6rem auto 1.2rem;
+      padding: 0.32rem 1rem;
       border-radius: 999px;
-      background: var(--accent-soft);
-      color: #6b4213;
-      font-size: 0.8rem;
+      background: #fff1d6;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
+      display: inline-block;
     }
 
     .text {
-      font-size: 0.98rem;
-      color: var(--muted);
+      color: var(--text-muted);
+      font-size: 1rem;
       line-height: 1.7;
-      margin-bottom: 1.8rem;
+      margin-bottom: 2rem;
     }
 
     .btn-primary {
       display: inline-block;
-      padding: 0.8rem 1.6rem;
+      padding: 0.85rem 1.7rem;
       border-radius: 999px;
-      border: none;
-      text-decoration: none;
       background: var(--accent);
-      color: #3a2200;
+      color: #3a2a12;
+      text-decoration: none;
       font-weight: 500;
-      font-size: 0.98rem;
-      box-shadow: 0 10px 24px rgba(180, 120, 40, 0.3);
-      cursor: pointer;
-      margin-bottom: 1.8rem;
+      font-size: 1rem;
+      box-shadow: 0 12px 26px rgba(230,160,80,0.25);
+      margin-bottom: 2rem;
     }
 
     .btn-primary:hover {
@@ -97,19 +99,21 @@
 
     .contact-box {
       border-top: 1px solid var(--border);
-      padding-top: 1.2rem;
-      font-size: 0.92rem;
-      color: var(--muted);
+      padding-top: 1.4rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
     }
 
     .contact-box strong {
       color: var(--text);
+      font-weight: 500;
     }
 
     .contact-box a {
       color: var(--text);
       text-decoration: none;
-      border-bottom: 1px solid rgba(31,36,48,0.2);
+      border-bottom: 1px solid rgba(0,0,0,0.15);
     }
 
     .contact-box a:hover {
@@ -117,42 +121,45 @@
     }
 
     @media (max-width: 520px) {
-      .card {
-        padding: 2rem 1.4rem 2rem;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
+      .card { padding: 2rem 1.4rem 1.9rem; }
+      h1 { font-size: 1.75rem; }
     }
   </style>
 </head>
+
 <body>
   <div class="card">
+
     <h1>SOLVINTER</h1>
-    <p class="tagline">Ett frö till ett växthus för mänsklig hållbarhet.</p>
-
-    <div class="pill">Huvudprojekt: Aethersum</div>
-
-    <p class="text">
-      Just nu växer Solvinter som idé och praktik genom Aethersum – en första prototyp för
-      ett växthuskollektiv där boende, återhämtning, studier och skapande möts.
+    <p class="tagline">
+      Ett initiativ för mänsklig hållbarhet, gemenskap och framtida livsmiljöer.
     </p>
 
-    <!-- Byt ut href mot din riktiga Kickstarter-länk när den finns -->
+    <div class="pill">Aethersum — Huvudprojekt</div>
+
+    <p class="text">
+      Solvinter växer just nu genom Aethersum:  
+      en prototyp för ett växthuskollektiv där boende, återhämtning,
+      lärande och skapande möts under samma tak.
+    </p>
+
+    <!-- Lägg till din riktiga Kickstarter-länk här -->
     <a class="btn-primary" href="KICKSTARTER-LÄNK-HÄR" target="_blank" rel="noopener noreferrer">
-      Till Aethersum på Kickstarter
+      Till Kickstarterkampanjen
     </a>
 
     <div class="contact-box">
       <p>
-        Solvinter kommer på sikt att formas som en egen stiftelse. Just nu söker jag personer
-        som är nyfikna på att bidra – som bollplank, samarbetspartner eller framtida styrelseledamot.
+        Solvinter kommer på sikt att formaliseras som en stiftelse.  
+        Du som är nyfiken på att bidra — i styrelse, samarbete eller rådgivning — är varmt välkommen att höra av dig.
       </p>
+
       <p>
         <strong>Kontakt:</strong><br>
-        <a href="mailto:kontakt@solvinter.org">kontakt@solvinter.org</a> (byt adress när du vill)
+        <a href="mailto:kontakt@solvinter.org">kontakt@solvinter.org</a>
       </p>
     </div>
+
   </div>
 </body>
 </html>
