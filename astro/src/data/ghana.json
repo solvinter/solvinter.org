@@ -1,0 +1,623 @@
+[
+  {
+    "id": "001",
+    "source": "03BD6FB7-2CBA-4EA0-B3E9-50626046019A_1_102_o.jpeg",
+    "sha256": "1d99b16b1448865fc317f001132bfc4d8214a70eae04931dde874d726e437ed8",
+    "src": "/images/ghana/001.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 1 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "002",
+    "source": "054FE28F-6BAE-4ECE-8EBC-D3B382B71E7A_1_102_o.jpeg",
+    "sha256": "e6c2722927e67f4dcca34780e993a4bc791f6547454364e024c8ec617450f4ee",
+    "src": "/images/ghana/002.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 2 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "003",
+    "source": "0B2C0B85-CFCD-49D5-B85D-A376271C53FB_1_105_c.jpeg",
+    "sha256": "a497440219c9ff0b840ce9a6def7f1e248f4c117a735cc8fd1175cea702eb698",
+    "src": "/images/ghana/003.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 3 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "004",
+    "source": "0EDF2554-2DA9-4DE8-8F97-55E578E9FC81_1_105_c.jpeg",
+    "sha256": "ad842c141404b6783612e6bb0891beab4d0a9b919900627bc3fb4892e5c9ae8b",
+    "src": "/images/ghana/004.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 4 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "005",
+    "source": "13160CA2-6A4B-4D0B-AE8E-01D8FD290D5D_1_102_o.jpeg",
+    "sha256": "b8e63a413750bd0597ee6e4a31b166508f7ddf7e6a4a9e3f165c0a241fdd8ba3",
+    "src": "/images/ghana/005.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 5 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "006",
+    "source": "179A9CE2-976D-4BB9-86C8-E01330984CD6_1_105_c.jpeg",
+    "sha256": "030a10f6e4c3c97c3c6e0802278c4ae872a2840b902ef7632438fc171fe36c6e",
+    "src": "/images/ghana/006.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 6 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "007",
+    "source": "197D4CEA-4DEF-48AC-B701-62EA51D573D1_1_105_c.jpeg",
+    "sha256": "458460aa1982c2d9dc925ecc2144ac3aa87c195081d1580e7db28175cf53eb11",
+    "src": "/images/ghana/007.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 7 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "008",
+    "source": "1BF3228B-D54E-42FC-87A2-EF7516D688E9_1_102_o.jpeg",
+    "sha256": "39830fea5be69b4f139986174611122cd4c9ef2fca89124e2926db08dbff107f",
+    "src": "/images/ghana/008.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 8 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "009",
+    "source": "25A27692-2F23-4D02-B38E-9DD835B26302_1_105_c.jpeg",
+    "sha256": "0c0d3d6c0a138c99914a9456834e69cdea836d00a6b3cc5d3ae51e1c8547f135",
+    "src": "/images/ghana/009.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 9 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "010",
+    "source": "2624551F-8B4E-4CF4-903D-E0893685B5D5_1_102_o.jpeg",
+    "sha256": "7a949808e1a1ee8e0b80f0c97bef7f79ece0c1925b0dd61cdacabbd1f13d22a2",
+    "src": "/images/ghana/010.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 10 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "011",
+    "source": "26F78451-AF6D-4666-82B2-5E63D8D6FDA0_1_105_c.jpeg",
+    "sha256": "dad8749d4ffe276f2d31b6c525265e91af544ff4c4b50751eb981d1eb66d5b21",
+    "src": "/images/ghana/011.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 11 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "012",
+    "source": "2BC77C08-6302-4D40-AAE9-3B27D47D481D_1_105_c.jpeg",
+    "sha256": "fad7129701cc830e8c015caf43f3d3d588753b4c2cc37c470441eab79f5d746e",
+    "src": "/images/ghana/012.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 12 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "013",
+    "source": "2E4908DD-EA6A-4256-90AC-46B0765EAAA2_1_105_c.jpeg",
+    "sha256": "8481962d8d6e2e6a982f4fca8fd7936d124f05a20ba15a149c37abec2e33f8d7",
+    "src": "/images/ghana/013.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 13 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "014",
+    "source": "321CCDEF-D995-4E5F-AD8B-42F4F6496014.jpeg",
+    "sha256": "d3b2295b4eed98a0d23519b4b573e723096aa72df97b48a2fce5c1b43597a809",
+    "src": "/images/ghana/014.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Ghana, fotografi 14 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "015",
+    "source": "33FEE057-EFA8-4389-A8AD-CC0D78DC73FF.jpeg",
+    "sha256": "65168eb9de519de46e548a456bc41026c5fa5051ff997385a6d76b3d13b7d711",
+    "src": "/images/ghana/015.jpg",
+    "width": 540,
+    "height": 960,
+    "alt": "Ghana, fotografi 15 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "016",
+    "source": "3B462B08-9A16-4A41-859E-2468A069BB62.jpeg",
+    "sha256": "c2274767b464b910cd66616adb0567fcbd0c411107041f0d97d8d3a32c3cf14b",
+    "src": "/images/ghana/016.jpg",
+    "width": 780,
+    "height": 1040,
+    "alt": "Ghana, fotografi 16 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "017",
+    "source": "42A8563F-0024-465A-9CFC-80DBCB4196FF_1_105_c.jpeg",
+    "sha256": "0e8d55672ecdedd07764fce8995bb05f9b0dded09e87294ae553f52aeba874b2",
+    "src": "/images/ghana/017.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 17 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "018",
+    "source": "46BB786B-99E5-4DA5-B381-A64C5F73152A.jpeg",
+    "sha256": "c6cbe749dca8b16348bd7ba5b479e807f53d59e6d1332dce744c36caee995f34",
+    "src": "/images/ghana/018.jpg",
+    "width": 540,
+    "height": 960,
+    "alt": "Ghana, fotografi 18 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "019",
+    "source": "49944EC9-1666-42A8-B99D-BB109B6AFC61_1_105_c.jpeg",
+    "sha256": "b205eb9b939db2c8fc6bda663195073d11fbfb35a3384db3442f728a6e026e33",
+    "src": "/images/ghana/019.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 19 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "020",
+    "source": "4BD2D59C-B00E-4BD4-8F71-993DD467E35C_1_102_o.jpeg",
+    "sha256": "96fa4a6b83d6f99f0f7b421d1f78b7a7fd3b758fbb9d2f2efc5906e353b9d2b1",
+    "src": "/images/ghana/020.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 20 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "021",
+    "source": "50378163-B5FE-49B4-ABC8-F9FCC24A3ADA.jpeg",
+    "sha256": "8fb1441835522d85d2b50f090a5f6f47dcac0b648127ecf159f4fabb3400cdba",
+    "src": "/images/ghana/021.jpg",
+    "width": 540,
+    "height": 960,
+    "alt": "Ghana, fotografi 21 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "022",
+    "source": "51AF6F47-2A80-4411-8324-9A831ADFB83C_1_102_o.jpeg",
+    "sha256": "c3603ee29e02e992393ce5b868f693988e6c6676d5e6553df744ebe1efe729f1",
+    "src": "/images/ghana/022.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 22 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "023",
+    "source": "531F44B8-25A6-4C10-8D16-3DC93DDA02F4_1_105_c.jpeg",
+    "sha256": "4a85b7332339b4b59d0504593ebf97cd2e9c5c522214e571e7fecd34491ec6ce",
+    "src": "/images/ghana/023.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 23 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "024",
+    "source": "5A0C0FDA-AC68-4301-8160-DD7D2C0DE037_1_105_c.jpeg",
+    "sha256": "ea184efe0be0e53241eb5dc08a2ee69becd08c00bd0e15cdec5ecff49a3c5e5a",
+    "src": "/images/ghana/024.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 24 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "025",
+    "source": "5BB5AD85-6BDF-4A49-A9B2-9F2E1B8939F8_1_102_o.jpeg",
+    "sha256": "0ceeef3a77b30b2c2e181dad8248a0662e91ab5c805f5951067ce2ca0fefa1a6",
+    "src": "/images/ghana/025.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 25 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "026",
+    "source": "63B42F69-3D4A-4C14-AEB9-99E726E30A02_1_105_c.jpeg",
+    "sha256": "2564b78548d40a7d54081f76bd0779a2ba602d7012bfa3035cbee67cf88ba5b6",
+    "src": "/images/ghana/026.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 26 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "027",
+    "source": "71E189CD-EE84-4455-9254-0674A4C5A02A.jpeg",
+    "sha256": "a191fb4be5b0c579b54ffb162317f26219f5279e03bd88244c70621505d27a28",
+    "src": "/images/ghana/027.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Ghana, fotografi 27 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "028",
+    "source": "7748BEA2-D4F3-4B4E-8DA5-889D4BD927EF.jpeg",
+    "sha256": "701615ae7368ed8b3a3b644c4cc3cd936a72677b78d16031eb52cec0e4214e79",
+    "src": "/images/ghana/028.jpg",
+    "width": 540,
+    "height": 960,
+    "alt": "Ghana, fotografi 28 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "029",
+    "source": "7EAD262D-DF6B-4E1B-B61F-F1E540BDBC2F_1_102_o.jpeg",
+    "sha256": "b217dfde51e637068ae17778c5dde2e665bdca9753e6936865080e89168e3d0c",
+    "src": "/images/ghana/029.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 29 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "030",
+    "source": "814A9234-535B-4705-ACDB-4A77A419D225_1_105_c.jpeg",
+    "sha256": "884f0f28b0aee1604f1c7d9707336ee919649db5427163b5864334b13b84946b",
+    "src": "/images/ghana/030.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 30 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "031",
+    "source": "865A4400-25E2-4E33-AB09-388EA405BB94_1_105_c.jpeg",
+    "sha256": "ee516bb896e8ddd5713049f344e9e4538387cba08ced11cecb589d2c653b1852",
+    "src": "/images/ghana/031.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 31 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "032",
+    "source": "896DA215-1070-4FCB-B7F7-17B85125105C_1_105_c.jpeg",
+    "sha256": "82f983a8ca7ebd821b46d2a769b61a0b8c087935418245d654b61b49d3b8df65",
+    "src": "/images/ghana/032.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 32 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "033",
+    "source": "8B97D0E6-7087-433B-A549-70936A0141CB_1_102_o.jpeg",
+    "sha256": "a1ec6feedab4606851fe613f7c0b92af510bd323db9a0930a76d3951f08f283f",
+    "src": "/images/ghana/033.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 33 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "034",
+    "source": "92E9645B-BA4A-47CD-ABFC-D721A1ADD43D_1_102_o.jpeg",
+    "sha256": "d6b8fa60cff596d60d7a87c203f55901c8644f820c5af3fe2618668af4774c7a",
+    "src": "/images/ghana/034.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 34 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "035",
+    "source": "98445B1D-911E-441B-9302-CA548F85B574_1_102_o.jpeg",
+    "sha256": "3bacee010d73251db793d8b72a833258ee54ccc371435dbdfad23b7ab4cea8d6",
+    "src": "/images/ghana/035.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 35 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "036",
+    "source": "98F46AA3-3070-411B-9A09-CA1B9BE7F203_1_105_c.jpeg",
+    "sha256": "a43979d7eaae52d293e6c101ced6ba167e4f4a7282b2062d28768028d5708781",
+    "src": "/images/ghana/036.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 36 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "037",
+    "source": "9D6F4F62-8A82-4536-B33F-6A36DA09DEE3_1_105_c.jpeg",
+    "sha256": "bdfc46bcc38dd8378505b20b66698ce326fc7d0d66eb7b92fee8c9debf43676d",
+    "src": "/images/ghana/037.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 37 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "038",
+    "source": "9E4DF94C-4200-4FEF-AC7C-242429CA5A7A.jpeg",
+    "sha256": "97a4086bac5e01ccb8a6661eb48f4fe6a0de49ca4371592e52e5af09d519e518",
+    "src": "/images/ghana/038.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Ghana, fotografi 38 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "039",
+    "source": "9FF2255B-7F5F-453E-98F0-B8243AD92ADF_1_105_c.jpeg",
+    "sha256": "24bd3775d87d68ffb30a77789c59cbcf9771fdafbcbb75660c53b58ea343f7e2",
+    "src": "/images/ghana/039.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 39 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "040",
+    "source": "A3DFEDAB-264C-4A83-8AD7-6557FC15DEDC_1_102_o.jpeg",
+    "sha256": "e3bd18b4f7582ee0bd01193f0ffac7ec0b0dc290fc9c2c44b4a6acace0cd2936",
+    "src": "/images/ghana/040.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 40 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "041",
+    "source": "A650CCA2-0DC2-4B7A-B8E9-2C8A1B999437_1_105_c.jpeg",
+    "sha256": "491ed2e28070ce25ad13766f296d333de6969d4fd21f2fc60f4cc49072ddd866",
+    "src": "/images/ghana/041.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 41 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "042",
+    "source": "A912F70B-A0E8-494B-AA82-12E0C02F1A5B_1_105_c.jpeg",
+    "sha256": "7c0956c6b707598d1fb6f599384937d4fe507796db5dd6112c0ff13f8fea0a95",
+    "src": "/images/ghana/042.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 42 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "043",
+    "source": "ABC998E3-C106-4144-B53E-481E2A08C28B_1_105_c.jpeg",
+    "sha256": "a533c61f98030ad90410b64bc2db4b003eec0f582d8aac1d31de51232d05bead",
+    "src": "/images/ghana/043.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 43 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "044",
+    "source": "AC0AC089-5646-471B-815F-47EBA054D6C6_1_102_o.jpeg",
+    "sha256": "c4297e615c45f038bd0b7eec48f3de6d19231d0f8d28c22c929e6fcf7b7ab6b8",
+    "src": "/images/ghana/044.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 44 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "045",
+    "source": "B072F046-4266-464A-8135-8DA604576CB4_1_105_c.jpeg",
+    "sha256": "5560e989c5693243eba5006f8f3f571cdc85f80c69523c03bb3ccdb84e18fd05",
+    "src": "/images/ghana/045.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 45 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "046",
+    "source": "B095278A-B5EA-43E2-9954-570E1C65F3B3_1_102_o.jpeg",
+    "sha256": "fd3109b1d99d7bd622bee8be5d9af2ee5e46b3d6987f7e14d366c9b505f78e38",
+    "src": "/images/ghana/046.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 46 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "047",
+    "source": "B4FA2188-CF90-41C9-A805-6F1A8F20A8EE_1_102_o.jpeg",
+    "sha256": "271857975be0d59881fa4187f4c55c89eca1d075041bde2b43bcc136f95cce31",
+    "src": "/images/ghana/047.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 47 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "048",
+    "source": "B9CAB9E8-C718-49D0-B96B-1012B37E51B9_1_105_c.jpeg",
+    "sha256": "d0f712009792ed64d7e1d6839b49d6d6bd93a5aa8b7fd5f87cbb584e51bb94a4",
+    "src": "/images/ghana/048.jpg",
+    "width": 886,
+    "height": 886,
+    "alt": "Ghana, fotografi 48 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "049",
+    "source": "BC9047E8-4944-4918-A869-CD03FB949DEF_1_105_c.jpeg",
+    "sha256": "2b7292b42d7e772068aa97cfa19ced6027d3db3e3557ce81f7d8d559581ea8bf",
+    "src": "/images/ghana/049.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 49 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "050",
+    "source": "C396B213-F2BE-4575-922E-FEF6DEE07176_1_105_c.jpeg",
+    "sha256": "39d7b5ff6ae9f17b8a95eb25b0b509aa4cacdf1eb15d79ee77a6fd9da8ee5479",
+    "src": "/images/ghana/050.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 50 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "051",
+    "source": "C3A82326-E19E-457F-9138-0672327F8A8C_1_105_c.jpeg",
+    "sha256": "d5581568438072f0f722361489d4ed0296ba8596470e3b55ec6517aa5dc586a4",
+    "src": "/images/ghana/051.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 51 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "052",
+    "source": "C7E2C3F9-9181-4244-83BA-6A70C7C5CCE1_1_105_c.jpeg",
+    "sha256": "0cbe29f2f9f268db1c4393a46a5541cca2e62163381fb2708a051738efb07990",
+    "src": "/images/ghana/052.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 52 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "053",
+    "source": "CD9BBFF0-BF4A-44C4-B811-8EF9F609DE01_1_105_c.jpeg",
+    "sha256": "ef723ecb80e0c0340bbf587be9c66a03783de854e3fa89f6a69d8148ff465307",
+    "src": "/images/ghana/053.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 53 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "054",
+    "source": "CE9EFE6D-66A7-4E25-8340-962386F77916_1_102_o.jpeg",
+    "sha256": "afb717d1baf25edffbaf07ffc8c52e58caa9be8947d842cabe1087d86f8b0e2d",
+    "src": "/images/ghana/054.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 54 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "055",
+    "source": "D2072445-6A22-420A-A898-C69518A79562_1_102_o.jpeg",
+    "sha256": "71ed3a54b215bd75f90fd5c74c6ec37ef4038f88bb1e8b1def51efc56e2d5f76",
+    "src": "/images/ghana/055.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 55 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "056",
+    "source": "D2B17280-DF95-4142-ADE8-B1D51068435C_1_105_c.jpeg",
+    "sha256": "e8f9bf1b3e2878a624bbde91e019a45db9e4031a96aec138a7d751faca1e8399",
+    "src": "/images/ghana/056.jpg",
+    "width": 1024,
+    "height": 768,
+    "alt": "Ghana, fotografi 56 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "057",
+    "source": "D3833E36-35E9-4D6A-BF0F-CB6AC80C7014_1_102_o.jpeg",
+    "sha256": "926f869c9e96631f6cba92543d16a0e8fd3329f9ec068186048b603e27223925",
+    "src": "/images/ghana/057.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 57 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "058",
+    "source": "D3FD70A3-0DC1-4B9E-BC4F-27A228B5D015_1_105_c.jpeg",
+    "sha256": "f1a819cda4199ad88bd40de36c718ab6981a8087f60f0e4b0e959bc92c5acc94",
+    "src": "/images/ghana/058.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 58 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "059",
+    "source": "D4D02750-3BCF-4CDD-988E-21B17001901A.jpeg",
+    "sha256": "968175b6973d5c290361afa00438d680cc5a4f3a15d097ff1f2d58753a25d6f5",
+    "src": "/images/ghana/059.jpg",
+    "width": 540,
+    "height": 960,
+    "alt": "Ghana, fotografi 59 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "060",
+    "source": "D81D5C96-9708-4DE0-929C-86A82754AD25_1_102_o.jpeg",
+    "sha256": "1c41f8e8cbd071b3f6f4224c499178c98d99eee716860b8cd996d7b8f3293270",
+    "src": "/images/ghana/060.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 60 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "061",
+    "source": "D98BAC56-C994-49A2-91BE-F580057EB168_1_105_c.jpeg",
+    "sha256": "40c00037d36ae17eb5aaf2f087dc002733a8080755946867c6d592244e74dbe7",
+    "src": "/images/ghana/061.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 61 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "062",
+    "source": "DBEF824A-2DBE-4646-964D-427DDF5F21E4_1_105_c.jpeg",
+    "sha256": "2e8d03f28801bcdb86f80f69ec275512e8cf6bd958ea54e6470db6e6a87e0d91",
+    "src": "/images/ghana/062.jpg",
+    "width": 724,
+    "height": 1086,
+    "alt": "Ghana, fotografi 62 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "063",
+    "source": "E373DED2-E05C-4C7C-B516-F546B0D447F3_1_105_c.jpeg",
+    "sha256": "4ddd03098d2cf084ddf32228e9c54deb502974805b0ec5336f0b653277b55445",
+    "src": "/images/ghana/063.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 63 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "064",
+    "source": "E986965B-98A2-45C3-B709-640CAAD3CE2B_1_102_o.jpeg",
+    "sha256": "ab530eefd0400a32e14a66c8f0f6f986f3c321b6ea94a533d0d2e12683784040",
+    "src": "/images/ghana/064.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 64 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "065",
+    "source": "EA2B61D3-348E-42C0-9ED3-DE3DCB54CB4F_1_102_o.jpeg",
+    "sha256": "a9cee8e1a5c8eedd06422c8d82bd73b92192ab5806c7af0979b1ecb072b56e6a",
+    "src": "/images/ghana/065.jpg",
+    "width": 2374,
+    "height": 1324,
+    "alt": "Ghana, fotografi 65 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "066",
+    "source": "ECF42386-D967-4BF1-BA77-188610414F7F_1_105_c.jpeg",
+    "sha256": "2137db69750aa62600d2ecc7c28954effc331c78123d73973630dbef91c045e1",
+    "src": "/images/ghana/066.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 66 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "067",
+    "source": "F2A8E490-2333-4D18-ABC0-B2A2E268529E_1_102_o.jpeg",
+    "sha256": "1c41f8e8cbd071b3f6f4224c499178c98d99eee716860b8cd996d7b8f3293270",
+    "src": "/images/ghana/067.jpg",
+    "width": 2172,
+    "height": 1448,
+    "alt": "Ghana, fotografi 67 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "068",
+    "source": "F83FC698-77AA-40E4-8D23-9225D61D75CE_1_105_c.jpeg",
+    "sha256": "2d5e0474de5f0ed65231a5604208b444ed9f7d47148641fd251b39446c398ca8",
+    "src": "/images/ghana/068.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 68 ur Dominic Eriksson Giwas urval"
+  },
+  {
+    "id": "069",
+    "source": "F86870E3-382E-42DA-A1B5-42F62AF9DEA4_1_105_c.jpeg",
+    "sha256": "4e94734cc12feebf7ed826874fed55e8a860bfca56f1df68d97392a7530633f2",
+    "src": "/images/ghana/069.jpg",
+    "width": 1086,
+    "height": 724,
+    "alt": "Ghana, fotografi 69 ur Dominic Eriksson Giwas urval"
+  }
+]

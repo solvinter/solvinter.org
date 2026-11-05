@@ -1,0 +1,47 @@
+---
+import Base from '../../../layouts/Base.astro';
+import photos from '../../../data/ghana.json';
+// Existing photographs only. These IDs describe the existing monochrome treatment.
+const monoIds=new Set([2,5,12,13,17,19,25,29,35,44,47,54,58,68]);
+const color=photos.filter(p=>!monoIds.has(Number(p.id)));
+const mono=photos.filter(p=>monoIds.has(Number(p.id)));
+const chapters:Array<{tone:string,photos:typeof photos}>=[];
+while(color.length||mono.length){
+ if(color.length)chapters.push({tone:'Colour',photos:color.splice(0,18)});
+ if(mono.length)chapters.push({tone:'Black and white',photos:mono.splice(0,7)});
+}
+
+
+---
+<Base title="Ghana · Collection 001 — Solvinter" description="69 photographs from Ghana. Photography and selection by Dominic Eriksson Giwa."><div class="draft">Local preview · not yet published</div><section class="collection-intro"><p class="eyebrow">Art / Collection 001</p><h1>Ghana</h1><p class="collection-deck">Places, people and traces of life.</p><div class="collection-credit"><span>Photography & selection<br/><strong>Dominic Eriksson Giwa</strong></span><span>69 photographs<br/>From the photographer’s own collection</span></div></section><div class="layout-tools"><div class="layout-buttons" role="group" aria-label="Choose a layout"><button data-layout="rhythm" aria-pressed="true">Visual rhythm</button><button data-layout="gallery" aria-pressed="false">Gallery</button><button data-layout="contact" aria-pressed="false">Contact sheet</button></div><p id="layout-description" aria-live="polite">Visual rhythm — closely spaced rows of varying height. Colour alternates with coherent black-and-white passages.</p><p class="small">The same 69 photographs in every layout. A proposed sequence in colour and black and white; images are shown in full.</p></div><section id="photographs" class="photographs rhythm" aria-label="Ghana, all 69 photographs">{chapters.map((chapter)=><div class="photo-chapter" data-tone={chapter.tone}><p class="chapter-tone">{chapter.tone}</p><div class="chapter-pictures">{chapter.photos.map((photo)=><figure id={'photo-'+photo.id} data-ratio={photo.width/photo.height} style={'--ratio:'+photo.width/photo.height}><a href={photo.src} target="_blank" aria-label={'Open photograph '+photo.id+' in full'}><img src={photo.src} width={photo.width} height={photo.height} alt={'Ghana, photograph '+photo.id+' from Dominic Eriksson Giwa’s selection'} loading="lazy"/></a><figcaption><span>{photo.id} / 69</span><span>Dominic Eriksson Giwa</span></figcaption></figure>)}</div></div>)}</section><section class="collection-end"><p class="eyebrow">End of the collection / 69 photographs</p><h2>One selection. Different ways of seeing.</h2><p>The selection remains the photographer’s. Layout and rhythm are presentation proposals.</p><a class="textlink" href="#main">Back to top ↑</a></section></Base>
+<script>
+const gallery=document.getElementById('photographs')!;
+const description=document.getElementById('layout-description')!;
+const descriptions:Record<string,string>={rhythm:'Visual rhythm — closely spaced rows of varying height. Colour alternates with coherent black-and-white passages.',gallery:'Gallery — large images, generous spacing and the photographs’ original proportions.',contact:'Contact sheet — an overview in the same order, with every image shown in full.'};
+for(const button of document.querySelectorAll<HTMLButtonElement>('[data-layout]'))button.addEventListener('click',()=>{
+ const layout=button.dataset.layout!;gallery.className='photographs '+layout;description.textContent=descriptions[layout];for(const b of document.querySelectorAll('[data-layout]'))b.setAttribute('aria-pressed',String(b===button));
+});
+// Reflow entire frames into rows; aspect ratios determine width and row height.
+function arrange(){
+ const width=gallery.clientWidth;
+ for(const chapter of gallery.querySelectorAll<HTMLElement>('.chapter-pictures')){
+  const figures=[...chapter.querySelectorAll<HTMLElement>('figure')];
+  const rows:HTMLElement[][]=[];let row:HTMLElement[]=[];let ratio=0;
+  const target=width<550?1.7:width<850?3:4.2;
+  for(const figure of figures){row.push(figure);ratio+=Number(figure.dataset.ratio);if(ratio>=target||row.length>=(width<550?2:rows.length%3===1?2:3)){rows.push(row);row=[];ratio=0;}}
+  if(row.length){if(row.length===1&&rows.length&&rows[rows.length-1].length>1)row.unshift(rows[rows.length-1].pop()!);rows.push(row);}
+  chapter.replaceChildren(...rows.map((figures)=>{const el=document.createElement('div');el.className='photo-row';el.append(...figures);return el;}));
+ }
+}
+new ResizeObserver(arrange).observe(gallery);
+
+</script>
+<style>
+.photographs figcaption>span:first-child{visibility:hidden}.photographs figure:hover figcaption>span:first-child,.photographs figure:focus-within figcaption>span:first-child{visibility:visible}
+
+.photo-chapter,.chapter-pictures,:global(.photo-row){display:contents}.chapter-tone{display:none}
+.rhythm{display:block}.rhythm .photo-chapter{display:block;margin-bottom:25px}.rhythm .chapter-tone{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#756e5d;margin:18px 0 10px}.rhythm .chapter-pictures{display:grid;gap:10px}.rhythm :global(.photo-row){display:flex;align-items:flex-start;gap:10px}.rhythm figure{flex:var(--ratio) 1 0;min-width:0;position:relative}.rhythm figure a{display:block}.rhythm figure img{width:100%;height:auto}.rhythm figcaption{position:absolute;bottom:0;left:0;right:0;padding:20px 9px 5px;margin:0;background:linear-gradient(transparent,rgba(0,0,0,.5));color:white;opacity:0;pointer-events:none}.rhythm figure:hover figcaption,.rhythm figure:focus-within figcaption{opacity:1}.rhythm figcaption span:last-child{display:none}
+@media(max-width:550px){.rhythm :global(.photo-row),.rhythm .chapter-pictures{gap:6px}.rhythm .photo-chapter{margin-bottom:18px}}
+
+.collection-intro{padding:70px 0 48px}.collection-intro h1{font-size:clamp(80px,14vw,180px);margin:15px 0 25px}.collection-deck{font:italic clamp(21px,3vw,30px) Georgia;color:#7e795f}.collection-credit{display:flex;gap:90px;font-size:11px;margin-top:35px;line-height:1.8}.collection-credit strong{font-weight:500}.layout-tools{padding:25px 0;border-top:1px solid #d8d5ca;border-bottom:1px solid #d8d5ca}.layout-buttons{display:inline-flex;gap:6px;flex-wrap:wrap;margin-right:30px}button{background:transparent;border:1px solid #bfb7a3;color:inherit;font:12px system-ui;padding:12px 18px;cursor:pointer}button[aria-pressed=true]{background:#30372f;color:#f7f5ef;border-color:#30372f}label{font-size:12px}label:has(input:disabled){opacity:.5}#layout-description{font-size:13px;margin:18px 0 5px}.layout-tools .small{margin:5px 0}.photographs{padding-top:28px}.photographs figure{margin:0}.photographs img{display:block;width:100%;height:auto}.photographs figcaption{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#716b5b;margin-top:12px;letter-spacing:.04em}.gallery{display:grid;grid-template-columns:1fr;gap:95px}.gallery figure{width:80%;justify-self:center}.gallery figure:nth-child(3n+2){width:63%}.gallery img{max-height:85vh;object-fit:contain}.contact{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:35px 22px}.contact img{height:190px;object-fit:contain;background:#ede9df}.contact figcaption span:last-child{display:none}.collection-end{padding:100px 0;max-width:600px}@media(max-width:700px){.collection-intro{padding:45px 0 30px}.collection-credit{gap:30px}.layout-tools label{display:block;margin-top:15px}.gallery{gap:45px}.gallery figure,.gallery figure:nth-child(3n+2){width:100%}.photographs figcaption span:last-child{display:none}.contact{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 12px}.contact img{height:140px}.photographs{padding-top:35px}}
+</style>

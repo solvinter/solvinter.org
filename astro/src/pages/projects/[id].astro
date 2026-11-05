@@ -1,0 +1,7 @@
+---
+import Base from '../../layouts/Base.astro';
+import {getCollection,render} from 'astro:content';
+export async function getStaticPaths(){return (await getCollection('projects')).map(entry=>({params:{id:entry.id},props:{entry}}));}
+const {entry}=Astro.props;const {Content}=await render(entry);
+---
+<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / Presentation under utveckling</p><h1>{entry.data.title}</h1><Content/><a href="/#projects">← Alla projekt</a></article></Base>
