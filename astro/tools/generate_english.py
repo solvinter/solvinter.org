@@ -2,6 +2,7 @@
 from pathlib import Path
 p=Path(__file__).resolve().parents[1]
 translations={
+'Urvalet är fastställt av fotografen.':'The selection is the photographer’s.',
 'Om Solvinter':'About Solvinter',
 'Solvinter är ett oberoende initiativ som verkar inom medicin, artificiell intelligens, filosofi och konst.':'Solvinter is an independent initiative working across medicine, artificial intelligence, philosophy and the arts.',
 'Grundat av Dominic Eriksson Giwa, en svensk läkare som utforskar mötet mellan mänsklig kunskap och framväxande teknologier.':'Founded by Dominic Eriksson Giwa, a Swedish physician exploring the intersection of human knowledge and emerging technologies.',

@@ -16,7 +16,7 @@ After editing Swedish content or presentation, regenerate English pages with `py
 
 ## Source and history
 
-The HTML prototype in the repository root and its assets are preserved. The Astro version is saved on the `astro-preview-2026-11-05` branch. No deployment workflow is added by this change. Publishing this version remains a separate action.
+The HTML prototype in the repository root and its assets are preserved. The Astro version is saved on the `astro-preview-2026-11-05` branch. GitHub Actions builds astro/ and deploys astro/dist/ to GitHub Pages on pushes to this branch. The custom domain is solvinter.org.
 
 Original image archives, private inventory, thumbnails, and curation decisions are excluded. The public image files are the display assets used by the reviewed website. Do not upload the complete original archive.
 
@@ -26,4 +26,4 @@ Original image archives, private inventory, thumbnails, and curation decisions a
 - Three collection layouts: Visual rhythm, Gallery, Contact sheet.
 - Sections and projects have no decorative numbering. Collection 001 remains the collection’s name.
 - The homepage winter banner is 200 px high on desktop, 220 px on wide displays and 180 px on mobile. Cropping uses CSS and does not modify originals.
-- The preview retains noindex and draft labels pending publication approval.
+- Published pages allow indexing and have no local-preview labels.
