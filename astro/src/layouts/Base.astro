@@ -4,7 +4,7 @@ const pathname = Astro.url.pathname;
 const en = pathname === '/' || pathname.startsWith('/en/');
 const home = ['/', '/en/', '/sv/'].includes(pathname);
 const navHome = en ? '/' : '/sv/';
-const svPath = home ? '/sv/' : en ? pathname.replace(/^\\/en/, '') || '/' : pathname;
+const svPath = home ? '/sv/' : en ? pathname.slice(3) || '/' : pathname;
 const enPath = home ? '/' : en ? pathname : '/en' + pathname;
 const {title=en?'Solvinter — a place for inquiry':'Solvinter — en plats för undersökande',description=en?'Medicine, philosophy, AI and art. An independent atelier for ideas and work that can grow.':'Medicin, filosofi, AI och konst. En oberoende ateljé för idéer och arbeten som får växa.'}=Astro.props;
 ---
