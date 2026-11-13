@@ -2,6 +2,12 @@
 from pathlib import Path
 p=Path(__file__).resolve().parents[1]
 translations={
+'Människor och AI.':'People and AI.',
+'Vi bygger tillsammans.':'Building together.',
+'Vi utforskar hur människor kan lära, skapa och arbeta tillsammans med AI. De första pilotprojekten i Ghana handlar om kartläggning av Cow Lane, fotografering i Mumford och frivilliga språk- och ljudinspelningar.':'We are exploring how people can learn, create and work alongside AI. Our first pilots in Ghana focus on mapping Cow Lane, photography in Mumford, and voluntary voice and language recordings.',
+'Små uppdrag, tydliga villkor, respekt för deltagarnas arbete och möjlighet att växa med projektet.':'Small assignments, clear terms, respect for participants and opportunities to grow together.',
+'Utforska Ghana-piloten på Solvinter Tech':'Explore the Ghana pilot at Solvinter Tech',
+
 'Urvalet är fastställt av fotografen.':'The selection is the photographer’s.',
 'Om Solvinter':'About Solvinter',
 'Solvinter är ett oberoende initiativ som verkar inom medicin, artificiell intelligens, filosofi och konst.':'Solvinter is an independent initiative working across medicine, artificial intelligence, philosophy and the arts.',
@@ -77,10 +83,10 @@ def translate(s):
  for sv,en in sorted(translations.items(),key=lambda item:-len(item[0])):s=s.replace(sv,en)
  return s
 for file in ['index.astro','art/collection-001.astro','projects/[id].astro']:
- s=(p/'src/pages'/file).read_text()
+ s=(p/'src/pages'/('sv/index.astro' if file=='index.astro' else file)).read_text()
  s=translate(s)
  # One additional route directory requires one additional parent in imports.
- s=s.replace("from '../","from '../../")
+ if file!='index.astro':s=s.replace("from '../","from '../../")
  s=s.replace('href="/#projects"','href="/en/#projects"').replace('href="/art/collection-001/"','href="/en/art/collection-001/"')
  s=s.replace("href={'/projects/'+p.id+'/'}","href={'/en/projects/'+p.id+'/'}")
  if file=='index.astro':
