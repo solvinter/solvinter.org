@@ -2,6 +2,16 @@
 from pathlib import Path
 p=Path(__file__).resolve().parents[1]
 translations={
+'Nu / Ghana':'Now / Ghana',
+'En pilot i praktiken.':'A pilot in practice.',
+'Solvinter arbetar med en liten grupp deltagare i Ghana för att undersöka hur Eira, praktiska uppgifter och gemensam reflektion kan stödja lärande och skapande.':'Solvinter is working with a small group of participants in Ghana to explore how Eira, practical assignments and shared reflection can support learning and creative work.',
+'Deltagandet är tills vidare begränsat medan formen prövas och förbättras.':'Participation remains limited while the format is tested and improved.',
+'Läs om Eira':'Read about Eira',
+'En aktiv pilot, tillsammans med långsiktiga projekt under utveckling.':'One active pilot, alongside longer-term projects in development.',
+'Planerat projekt':'Planned project',
+'Aktiv pilot':'Active pilot',
+'Publicerat':'Published',
+
 'Urvalet är fastställt av fotografen.':'The selection is the photographer’s.',
 'Om Solvinter':'About Solvinter',
 'Solvinter är ett oberoende initiativ som verkar inom medicin, artificiell intelligens, filosofi och konst.':'Solvinter is an independent initiative working across medicine, artificial intelligence, philosophy and the arts.',
@@ -20,7 +30,7 @@ translations={
 'Öppna data, AI och ekonomisk analys för att identifiera möjligheter.':'Open data, AI and economic analysis to identify opportunities.',
 'Sol 1 / Beräkningsresurs':'Sol 1 / Compute resource',
 'Lokal AI och GPU-beräkningar.':'Local AI and GPU computing.',
-'Sol 1 är en arbetsstation med NVIDIA RTX 4090 och 24 GB grafikminne. Den ger en grund för arbete med lokala AI-modeller och GPU-beräkningar.':'Sol 1 is a workstation with an NVIDIA RTX 4090 and 24 GB of VRAM. It provides a foundation for working with local AI models and GPU computing.',
+'Sol 1 är en lokal arbetsstation med NVIDIA RTX 4090 och 24 GB grafikminne, avsedd för prototyper, utvärdering och utvalda arbetsflöden med lokala modeller inom Solvinter. Det är en intern resurs, inte en publik molntjänst, och extern åtkomst erbjuds inte i nuläget.':'Sol 1 is a local workstation with an NVIDIA RTX 4090 and 24 GB of VRAM, intended for prototyping, evaluation and selected local-model workloads within Solvinter. It is an internal resource, not a public cloud service, and external access is not currently offered.',
 'Sol 1 · Hårdvara':'Sol 1 · Hardware',
 'Kärnor / trådar':'Cores / threads','Maxfrekvens':'Maximum frequency','L3-cache':'L3 cache','Grafikkort':'Graphics card','Grafikminne':'VRAM','Operativsystem':'Operating system','5,05 GHz':'5.05 GHz',
 
@@ -51,7 +61,7 @@ translations={
 'Tjänsteerbjudande under utveckling för forskningsnära och medicinska uppdrag.':'Services in development for medical and research-related assignments.',
 'Första föreslagna arbetsprovet: en avgränsad utvärdering av ett medicinskt AI-system med bedömningsmatris, felanalys och rapport. Kontaktuppgifter och uppdragsvillkor läggs till efter granskning.':'First proposed work sample: a focused evaluation of a medical AI system, including an assessment framework, error analysis and report. Contact details and terms will be added after review.',
 'Ett tjänsteerbjudande för utvärdering av medicinska AI-system utvecklas.':'A service for evaluating medical AI systems is in development.',
-'AI, utbildning och mänsklig handlingsförmåga.':'AI, education and human agency.',
+'En AI-guide för att lära genom att göra, nu i en liten pilot i Ghana genom Solvinter Tech.':'A guided AI companion for learning by doing, now being tested in a small Ghana pilot through Solvinter Tech.',
 'Medicin, metabolism och bioteknologisk utveckling.':'Medicine, metabolism and biotechnology development.',
 'Lokal presentation · ännu inte publicerad':'Local preview · not yet published',
 '69 fotografier från Ghana. Urval och fotografi av Dominic Eriksson Giwa.':'69 photographs from Ghana. Photography and selection by Dominic Eriksson Giwa.',
@@ -77,21 +87,20 @@ def translate(s):
  for sv,en in sorted(translations.items(),key=lambda item:-len(item[0])):s=s.replace(sv,en)
  return s
 for file in ['index.astro','art/collection-001.astro','projects/[id].astro']:
- s=(p/'src/pages'/file).read_text()
+ s=(p/'src/pages'/('sv/index.astro' if file=='index.astro' else file)).read_text()
  s=translate(s)
  # One additional route directory requires one additional parent in imports.
- s=s.replace("from '../","from '../../")
- s=s.replace('href="/#projects"','href="/en/#projects"').replace('href="/art/collection-001/"','href="/en/art/collection-001/"')
+ if file!='index.astro':s=s.replace("from '../","from '../../")
+ s=s.replace('href="/sv/#projects"','href="/en/#projects"').replace('href="/art/collection-001/"','href="/en/art/collection-001/"').replace('href="/projects/eira/"','href="/en/projects/eira/"')
  s=s.replace("href={'/projects/'+p.id+'/'}","href={'/en/projects/'+p.id+'/'}")
  if file=='index.astro':
-  descriptions={k:translations[k] for k in ['Ett tjänsteerbjudande för utvärdering av medicinska AI-system utvecklas.','AI, utbildning och mänsklig handlingsförmåga.','Medicin, metabolism och bioteknologisk utveckling.','Öppna data, AI och ekonomisk analys för att identifiera möjligheter.']}
+  descriptions={k:translations[k] for k in ['Ett tjänsteerbjudande för utvärdering av medicinska AI-system utvecklas.','En AI-guide för att lära genom att göra, nu i en liten pilot i Ghana genom Solvinter Tech.','Medicin, metabolism och bioteknologisk utveckling.','Öppna data, AI och ekonomisk analys för att identifiera möjligheter.']}
   import json
   s=s.replace("const projects=await getCollection('projects');", "const projectTranslations="+json.dumps(descriptions,ensure_ascii=False)+";\nconst projects=(await getCollection('projects')).map(p=>({...p,data:{...p.data,description:projectTranslations[p.data.description]||p.data.description}}));")
  if file=='projects/[id].astro':
-  s=s.replace('<Content/>',"<p>{{eira:'AI, education and human agency.',metabolismx:'Medicine, metabolism and biotechnology development.','clinical-ai':'A service for evaluating medical AI systems is in development.'}[entry.id]}</p><p>Project presentation in development. Status and work samples need review before publication.</p>")
+  s=s.replace('<Content/>',"{entry.id==='observatory'?<><p>Solvinter Observatory is a planned project for identifying opportunities by combining open data, AI and economic analysis. The observatory is open to a range of applications.</p><h3>Compute Economics</h3><p>The first planned application is Compute Economics: tracking GPU prices, mining revenue and rental markets to identify differences in profitability.</p><p>The project is at the idea stage. Data collection and ongoing monitoring are not yet operational.</p></>:entry.id==='eira'?<><p>Eira is a guided AI companion for learning by doing: understanding an assignment, asking questions, solving one problem at a time and reflecting on what comes next.</p><p>A small, limited pilot is underway with participants in Ghana. The wider product remains under development, and access is not generally open.</p></>:<><p>{{metabolismx:'Medicine, metabolism and biotechnology development.','clinical-ai':'A service for evaluating medical AI systems is in development.'}[entry.id]}</p><p>This is a planned project. Scope, status and work samples will be reviewed before publication.</p></>}")
  if file=='art/collection-001.astro':s=s.replace('alt={photo.alt}',"alt={'Ghana, photograph '+photo.id+' from Dominic Eriksson Giwa’s selection'}")
- if file=='projects/[id].astro':
-  body=s[s.index('<p>{{eira:'):s.index('<a href=')]
-  s=s.replace(body, "{entry.id==='observatory'?<><p>Solvinter Observatory is a planned project for identifying opportunities by combining open data, AI and economic analysis. The observatory is open to a range of applications.</p><h3>Compute Economics</h3><p>The first planned application is Compute Economics: tracking GPU prices, mining revenue and rental markets to identify differences in profitability.</p><p>The project is at the idea stage. Data collection and ongoing monitoring are not yet operational.</p></>:<>"+body+"</>}")
  dest=p/'src/pages/en'/file;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(s)
+ if file=='index.astro':
+  (p/'src/pages/index.astro').write_text(s.replace("from '../../","from '../"))
 print('Generated English homepage, collection and project routes.')

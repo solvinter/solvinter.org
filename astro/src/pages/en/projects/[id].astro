@@ -1,7 +1,13 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import {getCollection,render} from 'astro:content';
-export async function getStaticPaths(){return (await getCollection('projects')).map(entry=>({params:{id:entry.id},props:{entry}}));}
-const {entry}=Astro.props;const {Content}=await render(entry);
+
+export async function getStaticPaths(){
+  return (await getCollection('projects')).map(entry=>({params:{id:entry.id},props:{entry}}));
+}
+
+const {entry}=Astro.props;
+const {Content}=await render(entry);
+const active=entry.data.status==='Pågående';
 ---
-<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / Presentation in development</p><h1>{entry.data.title}</h1>{entry.id==='observatory'?<><p>Solvinter Observatory is a planned project for identifying opportunities by combining open data, AI and economic analysis. The observatory is open to a range of applications.</p><h3>Compute Economics</h3><p>The first planned application is Compute Economics: tracking GPU prices, mining revenue and rental markets to identify differences in profitability.</p><p>The project is at the idea stage. Data collection and ongoing monitoring are not yet operational.</p></>:<><p>{{eira:'AI, education and human agency.',metabolismx:'Medicine, metabolism and biotechnology development.','clinical-ai':'A service for evaluating medical AI systems is in development.'}[entry.id]}</p><p>Project presentation in development. Status and work samples need review before publication.</p></>}<a href="/en/#projects">← All projects</a></article></Base>
+<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {active?'Active pilot':'Planned project'}</p><h1>{entry.data.title}</h1>{entry.id==='observatory'?<><p>Solvinter Observatory is a planned project for identifying opportunities by combining open data, AI and economic analysis. The observatory is open to a range of applications.</p><h3>Compute Economics</h3><p>The first planned application is Compute Economics: tracking GPU prices, mining revenue and rental markets to identify differences in profitability.</p><p>The project is at the idea stage. Data collection and ongoing monitoring are not yet operational.</p></>:entry.id==='eira'?<><p>Eira is a guided AI companion for learning by doing: understanding an assignment, asking questions, solving one problem at a time and reflecting on what comes next.</p><p>A small, limited pilot is underway with participants in Ghana. The wider product remains under development, and access is not generally open.</p></>:<><p>{{metabolismx:'Medicine, metabolism and biotechnology development.','clinical-ai':'A service for evaluating medical AI systems is in development.'}[entry.id]}</p><p>This is a planned project. Scope, status and work samples will be reviewed before publication.</p></>}<a href="/en/#projects">← All projects</a></article></Base>

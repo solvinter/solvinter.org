@@ -1,8 +1,8 @@
 ---
 title: Eira
-description: AI, utbildning och mänsklig handlingsförmåga.
-status: Idé
+description: En AI-guide för att lära genom att göra, nu i en liten pilot i Ghana genom Solvinter Tech.
+status: Pågående
 ---
-AI, utbildning och mänsklig handlingsförmåga.
+Eira är en AI-guide för att lära genom att göra: förstå en uppgift, ställa frågor, lösa ett problem i taget och reflektera över nästa steg.
 
-Projektpresentation under utveckling. Status och arbetsprover behöver granskas före publicering.
+En liten, begränsad pilot pågår med deltagare i Ghana. Den bredare produkten är fortfarande under utveckling, och tillgången är inte allmänt öppen.

@@ -1,7 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import {getCollection,render} from 'astro:content';
-export async function getStaticPaths(){return (await getCollection('projects')).map(entry=>({params:{id:entry.id},props:{entry}}));}
-const {entry}=Astro.props;const {Content}=await render(entry);
+
+export async function getStaticPaths(){
+  return (await getCollection('projects')).map(entry=>({params:{id:entry.id},props:{entry}}));
+}
+
+const {entry}=Astro.props;
+const {Content}=await render(entry);
+const active=entry.data.status==='Pågående';
 ---
-<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / Presentation under utveckling</p><h1>{entry.data.title}</h1><Content/><a href="/#projects">← Alla projekt</a></article></Base>
+<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {active?'Aktiv pilot':'Planerat projekt'}</p><h1>{entry.data.title}</h1><Content/><a href="/sv/#projects">← Alla projekt</a></article></Base>
