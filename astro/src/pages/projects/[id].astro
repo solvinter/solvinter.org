@@ -8,6 +8,6 @@ export async function getStaticPaths(){
 
 const {entry}=Astro.props;
 const {Content}=await render(entry);
-const active=entry.data.status==='Pågående';
+const statusLabels={'Idé':'Planerat projekt','Pågående':'Aktiv pilot','Klart':'Publicerat'};
 ---
-<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {active?'Aktiv pilot':'Planerat projekt'}</p><h1>{entry.data.title}</h1><Content/><a href="/sv/#projects">← Alla projekt</a></article></Base>
+<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {statusLabels[entry.data.status]}</p><h1>{entry.data.title}</h1><Content/><a href="/sv/#projects">← Alla projekt</a></article></Base>
