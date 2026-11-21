@@ -10,4 +10,4 @@ const {entry}=Astro.props;
 const {Content}=await render(entry);
 const statusLabels={'Idé':'Planerat projekt','Pågående':'Aktiv pilot','Klart':'Publicerat'};
 ---
-<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {statusLabels[entry.data.status]}</p><h1>{entry.data.title}</h1><Content/><a href="/sv/#projects">← Alla projekt</a></article></Base>
+<Base title={entry.data.title+' — Solvinter'}><article class="project"><p class="eyebrow">Projects / {statusLabels[entry.data.status]}</p><h1>{entry.data.title}</h1><Content/>{entry.id==='eira'&&<p><a href="https://eira.solvinter.org/" target="_blank" rel="noopener noreferrer">{Astro.url.pathname.startsWith('/en/') ? 'Launch Eira ↗' : 'Öppna Eira ↗'}</a></p>}<a href="/sv/#projects">← Alla projekt</a></article></Base>
