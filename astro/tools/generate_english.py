@@ -91,6 +91,13 @@ translations.update({
 'Vi vill göra kunskap och verktyg mer tillgängliga och ge människor med olika bakgrund möjlighet att lära, skapa och påverka utvecklingen.': 'We aim to make knowledge and tools more accessible, giving people from different backgrounds opportunities to learn, create and help shape what comes next.',
 'Solvinter drivs av SOLVINTER LTD, ett bolag registrerat i Storbritannien.': 'Solvinter is operated by SOLVINTER LTD, a company registered in the United Kingdom.'
 })
+translations.update({
+'Kommande / Solvinter.ai': 'Coming soon / Solvinter.ai',
+'Arbete utan gränser.': 'Work beyond borders.',
+'Solvinter.ai är ett initiativ under utveckling för att göra AI och den globala digitala arbetsmarknaden mer tillgängliga.': 'Solvinter.ai is an initiative in development to make AI and the global digital job market more accessible.',
+'Vi vill ge människor som annars har begränsade möjligheter att nå internationella uppdrag en väg att lära sig efterfrågade färdigheter, utföra verkligt arbete och få betalt för det. Det handlar inte bara om utbildning, utan om möjligheten att skapa egna inkomster och större ekonomisk självständighet.': 'We want to help people who might otherwise struggle to access international opportunities develop valuable skills, do real work and get paid for it. This is not only about education: it is about the opportunity to earn an income and gain greater economic independence.',
+'Under utveckling. Ingen separat tjänst har lanserats ännu. Eira och piloten i Ghana är de första stegen i att pröva arbetssättet.': 'In development. No separate service has launched yet. Eira and the Ghana pilot are the first steps in testing this approach.',
+})
 def translate(s):
  # Replace longest phrases first; escaped curly quotes keep JavaScript strings valid.
  for sv,en in sorted(translations.items(),key=lambda item:-len(item[0])):s=s.replace(sv,en)
